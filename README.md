@@ -186,6 +186,7 @@ Ejemplo
 
 
 CONTAINER ID |   	IMAGE 	|		COMMAND 	|	CREATED		|	STATUS	|	PORTS 	|		NAMES
+---|	---	|	---|		--- | 	---	|		---	|	---
 EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carson
 
 > docker rename eager_carson hola_mundo 
