@@ -96,3 +96,94 @@ Un contenedor ejecuta sus procesos de forma nativa
 * Cuando un contenedor es ejecutado, el daemon de docker le dice, a partir de acá para arriba este disco es tuyo, pero no puedes subir mas arriba.
 * Docker hace que los procesos adentro de un contenedor este aislados del resto del sistema, no le permite ver más allá.
 * Cada contenedor tiene un ID único, también tiene un nombre.
+
+# Comandos
+
+## Listado
+
+### Lista de contenedores
+
+``
+	docker ps
+``
+
+### Lista de contenedor con detalles
+
+``
+	docker ps -a
+``
+
+### Obtener una lista de ids en base a los contenedores
+
+``
+	docker ps -aq
+``
+
+## Inspeccionar
+
+### Ver toda la informacion
+
+``
+	docker inspect nombre_contenedor
+``
+
+### Aplicar un filtro para la informacion
+
+``
+	docker inspect -f {{ json .Propiedad}}
+``
+
+Ejemplo
+
+> docker inspect -f {{json .Config}}
+
+## Logs
+
+### Ver los registros que se tienen para un contenedor
+
+``
+	docker logs container_name
+``
+
+## Borrar contenedor
+
+### Eliminar contenedor inactivo
+
+``
+	docker rm nombre_contenedor
+``
+
+### Borar todos los contenedores que esten inactivos
+
+``
+	docker rm $(docker ps -aq)
+``
+
+### Detener el contenedor y eliminarlo
+
+``
+	docker rm -f MyContainer
+``
+
+## Borrar imagenes
+
+### Borrar todas las imagenes inactivas
+
+``
+	docker image prune
+``
+
+## Cambiar el nombre o alias de un contenedor
+
+### Renombrar el alias
+
+``
+	docker rename nombre nuevoNombre
+``
+
+Ejemplo
+
+CONTAINER ID   	IMAGE 			COMMAND 		CREATED			STATUS		PORTS 			NAMES
+EDC89CFD5EB4	HELLO-WORLD		"/HELLO"		2 HOURS AGO 	EXITED(0)					eager_carson
+
+> docker rename eager_carson hola_mundo 
