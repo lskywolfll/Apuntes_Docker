@@ -190,3 +190,14 @@ CONTAINER ID |   	IMAGE 	|		COMMAND 	|	CREATED		|	STATUS	|	PORTS 	|		NAMES
 EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carson
 
 > docker rename eager_carson hola_mundo 
+
+## Correr docker
+
+### Correr directamente a la terminal y mantenerlo abierto incluso si no esta conectado 
+
+` docker run -ti ubuntu `
+
+### Correr un contenedor
+
+` docker run nombre `
+
