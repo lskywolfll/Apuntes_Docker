@@ -107,6 +107,10 @@ Un contenedor ejecuta sus procesos de forma nativa
 	docker ps
 ``
 
+### Lista de imagenes
+
+` docker images `
+
 ### Lista de contenedor con detalles
 
 ``
@@ -118,6 +122,10 @@ Un contenedor ejecuta sus procesos de forma nativa
 ``
 	docker ps -aq
 ``
+
+### Obtener una lista de ids en base a las imagenes
+
+` docker images -q `
 
 ## Inspeccionar
 
@@ -210,6 +218,7 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 
 ` docker run nombre `
 
-### Correr contenedor y no entrar directamente en la ejecucion del mismo
+### Correr contenedor en un puerto especifico y no entrar directamente en la ejecucion del mismo
 
 `docker run -p 80:80 -d nombreImagen`
+
