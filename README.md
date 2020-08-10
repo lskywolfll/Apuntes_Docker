@@ -173,6 +173,15 @@ Ejemplo
 	docker image prune
 ``
 
+
+### Borrar imagen especifica 
+
+` docker rmi nombreImagen`
+
+### Borrar imagen especifica forzadamente 
+
+` docker rmi -f nombreImagen`
+
 ## Cambiar el nombre o alias de un contenedor
 
 ### Renombrar el alias
@@ -201,3 +210,6 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 
 ` docker run nombre `
 
+### Correr contenedor y no entrar directamente en la ejecucion del mismo
+
+`docker run -p 80:80 -d nombreImagen`
