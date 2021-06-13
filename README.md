@@ -218,6 +218,10 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 
 ` docker run nombre `
 
+### Correr un contenedor en segundo plano
+
+` docker run nombre -d `
+
 ### Correr contenedor en un puerto especifico y no entrar directamente en la ejecucion del mismo
 
 `docker run -p 80:80 -d nombreImagen`
