@@ -222,3 +222,6 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 
 `docker run -p 80:80 -d nombreImagen`
 
+### Parar un contenedor corriendo
+
+`docker container stop nombreContenedor`
