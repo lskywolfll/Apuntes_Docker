@@ -142,7 +142,7 @@ Un contenedor ejecuta sus procesos de forma nativa
 ### Aplicar un filtro para la informacion
 
 ``
-	docker inspect -f {{ json .Propiedad}}
+	docker inspect -f {{ .Propiedad}}
 ``
 
 Ejemplo
