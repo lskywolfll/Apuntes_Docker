@@ -168,7 +168,7 @@ Ejemplo
 ### Borar todos los contenedores que esten inactivos
 
 ``
-	docker rm $(docker ps -aq)
+	docker container prune
 ``
 
 ### Detener el contenedor y eliminarlo
