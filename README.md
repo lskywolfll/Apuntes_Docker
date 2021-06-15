@@ -77,6 +77,10 @@ No pueden alterar su entorno de ejecución (a menos que explícitamente se indiq
 
 ![VM usa mas recursos que el docker ya que solo ejecuta procesos sin el S.O como tal](https://blogs.bmc.com/wp-content/uploads/2018/07/containers-vs-virtual-machines.jpg)
 
+## Arquitectura Docker
+
+![Arquitectura](https://ualmtorres.github.io/SeminarioDockerPresentacion/images/DockerEngine.png)
+
 ##  Comandos Utiles
 
 [Commands of Docker Basic](https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf)
