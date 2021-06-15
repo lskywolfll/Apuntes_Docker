@@ -105,7 +105,7 @@ Un contenedor ejecuta sus procesos de forma nativa
 
 ## Listado
 
-### Lista de contenedores
+### Lista de contenedores activos
 
 ``
 	docker ps
@@ -115,7 +115,7 @@ Un contenedor ejecuta sus procesos de forma nativa
 
 ` docker images `
 
-### Lista de contenedor con detalles
+### Lista de contenedor activos/inactivos con detalles
 
 ``
 	docker ps -a
