@@ -243,3 +243,11 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 ### Reiniciar un contenedor
 
 `docker container restart nombreContenedor`
+
+### Correr un proceso en un contenedor corriendo
+
+`docker exec -it nombreContenedor bash`
+
+> i => Interactive
+>> t => Terminal
+>>> Bash => Procces
