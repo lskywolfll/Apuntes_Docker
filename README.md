@@ -222,6 +222,12 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 
 ` docker run nombre `
 
+### Correr un contenedor con un nombre personalizado
+
+` docker run --name hello-there hello-world`
+
+> hello-world es una imagen asi que solo tendrias que asignarle la imagen que deseas y darle otro nombre customizado que quieras :)
+
 ### Correr un contenedor en segundo plano
 
 ` docker run nombre -d `
