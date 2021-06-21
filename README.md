@@ -165,11 +165,15 @@ Ejemplo
 	docker rm nombre_contenedor
 ``
 
-### Borar todos los contenedores que esten inactivos
+### Borrar todos los contenedores que esten inactivos
 
 ``
 	docker container prune
 ``
+
+### Eliminar todos los contenedores esten apagados/activos
+
+`docker rm -f $(docker ps -aq)`
 
 ### Detener el contenedor y eliminarlo
 
@@ -236,6 +240,9 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 
 `docker run -p 80:80 -d nombreImagen`
 
+> 80 => Puerto de la maquina donde se corre docker
+> > 80 => Puerto del contenedor
+
 ### Parar un contenedor corriendo
 
 `docker container stop nombreContenedor`
@@ -261,3 +268,15 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 ### Obtener el process id de un contenedor
 
 `docker inspect --format '{{.State.Pid}}' alwaysup`
+
+### Ver logs de un contenedor
+
+`docker logs nombreContenedor`
+
+### Seguimiento de logs a un contenedor
+
+`docker logs -f nombreContenedor`
+
+### Ver las ultimas 10 entradas de logs a un contenedor docker rm -f $(docker ps -aq)
+
+`docker logs --tail 10 -f nombreContenedor`
