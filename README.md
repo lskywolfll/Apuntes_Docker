@@ -257,3 +257,7 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 `docker run --name alwaysup -d ubuntu tail -f /dev/null `
 
 > luego de ubuntu viene a ser nuestro command de lanzamiento para el contenedor
+
+### Obtener el process id de un contenedor
+
+`docker inspect --format '{{.State.Pid}}' alwaysup`
