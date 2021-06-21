@@ -214,7 +214,7 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 
 ## Correr docker
 
-### Correr directamente a la terminal y mantenerlo abierto incluso si no esta conectado 
+### Correr directamente a la terminal y de manera interactiva
 
 ` docker run -ti ubuntu `
 
