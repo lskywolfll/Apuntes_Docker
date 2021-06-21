@@ -239,3 +239,7 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 ### Parar un contenedor corriendo
 
 `docker container stop nombreContenedor`
+
+### Reiniciar un contenedor
+
+`docker container restart nombreContenedor`
