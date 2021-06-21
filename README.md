@@ -251,3 +251,9 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 > i => Interactive
 >> t => Terminal
 >>> Bash => Procces
+
+### Correr un contenedor con un command manual
+
+`docker run --name alwaysup -d ubuntu tail -f /dev/null `
+
+> luego de ubuntu viene a ser nuestro command de lanzamiento para el contenedor
