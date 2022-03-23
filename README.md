@@ -281,6 +281,10 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 
 `docker logs --tail 10 -f nombreContenedor`
 
-### Construir un contenedor en base a un dockerfile y indicar (.) donde existe el archivo para poder crearlo
+### Construir una imagen en base a un dockerfile y indicar (.) donde existe el archivo para poder crearlo
 
-`docker build -t name .`
+`docker build -t nameImage .`
+
+### 
+
+`docker run -p 8080:80 nameImage .`
