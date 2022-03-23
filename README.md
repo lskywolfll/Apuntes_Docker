@@ -285,6 +285,6 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 
 `docker build -t nameImage .`
 
-### 
+### Corre una imagen por detras (detach) en el puerto 80 (puedes cambiarlo al que necesites)
 
-`docker run -p 8080:80 nameImage .`
+`docker run -d -p 8080:80 nameImage`
