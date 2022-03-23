@@ -280,3 +280,7 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 ### Ver las ultimas 10 entradas de logs a un contenedor docker rm -f $(docker ps -aq)
 
 `docker logs --tail 10 -f nombreContenedor`
+
+### Construir un contenedor en base a un dockerfile y indicar (.) donde existe el archivo para poder crearlo
+
+`docker build -t nodebb .`
