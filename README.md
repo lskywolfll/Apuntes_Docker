@@ -283,4 +283,4 @@ EDC89CFD5EB4|	HELLO-WORLD	|	"/HELLO"|		2 HOURS AGO| 	EXITED(0)	|			|	eager_carso
 
 ### Construir un contenedor en base a un dockerfile y indicar (.) donde existe el archivo para poder crearlo
 
-`docker build -t nodebb .`
+`docker build -t name .`
